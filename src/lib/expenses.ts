@@ -50,7 +50,7 @@ export async function updateExpense(
     };
 
     // Firestoreのフィールド更新用にデータを平坦化
-    const flattenedUpdate: Record<string, any> = {};
+    const flattenedUpdate: Record<string, Date | string | number> = {};
     Object.entries(updateData).forEach(([key, value]) => {
         if (value instanceof Date) {
             flattenedUpdate[key] = value;

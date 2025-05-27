@@ -94,7 +94,7 @@ export default function MonthlyReport({ year, month }: MonthlyReportProps) {
                                 cx="50%"
                                 cy="50%"
                                 outerRadius={80}
-                                label={({ name, value }) => `${name}`}
+                                label={({ name }) => name}
                             >
                                 {categoryData.map((_, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -119,7 +119,7 @@ export default function MonthlyReport({ year, month }: MonthlyReportProps) {
                                 cx="50%"
                                 cy="50%"
                                 outerRadius={80}
-                                label={({ name, value }) => `${name}`}
+                                label={({ name }) => name}
                             >
                                 {payerData.map((_, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -148,4 +148,4 @@ export default function MonthlyReport({ year, month }: MonthlyReportProps) {
             </div>
         </div>
     );
-} 
+}
