@@ -118,7 +118,7 @@ export default function Home() {
 
   return (
     <main className="container mx-auto px-4 py-4 max-w-lg">
-      <h1 className="text-2xl font-bold text-center mb-4">家計簿アプリ</h1>
+      <h1 className="text-2xl font-bold text-center mb-4">ますだの家計簿</h1>
 
       <div className="mb-4 flex flex-col space-y-2">
         <div className="flex items-center justify-between">
